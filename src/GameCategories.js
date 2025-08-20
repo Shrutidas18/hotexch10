@@ -24,40 +24,34 @@ const GameCategories = () => {
       <h2 className="categories-heading">Game Categories</h2>
       <div className="categories-grid">
         {categories.map((cat, index) => (
-          <div className="category-card" key={index}>
+          <a
+            href={gameLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="category-card"
+            key={index}
+          >
             <img src={cat.img} alt={cat.name} className="category-img" />
             <div className="overlay">
               <h3>{cat.name}</h3>
               <p>Bet Start {cat.bet}</p>
-              <a
-                href={gameLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="play-btn"
-              >
-                Play
-              </a>
             </div>
-          </div>
+          </a>
         ))}
 
         {/* Much More card */}
-        <div className="category-card more-card">
+        <a
+          href={gameLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="category-card more-card"
+        >
           <div className="overlay">
             <h3>+ Much More</h3>
-            <a
-              href={gameLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="play-btn"
-            >
-              Play
-            </a>
           </div>
-        </div>
+        </a>
       </div>
 
-      {/* Link to WordPress site */}
       <a
         href={gameLink}
         target="_blank"

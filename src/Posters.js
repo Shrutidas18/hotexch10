@@ -5,9 +5,11 @@ import "./Posters.css";
 const Posters = () => {
   const posters = [
     "/poster1.jpg",
+    "/poster5.jpg",
     "/poster2.jpg",
     "/poster3.jpg",
     "/poster4.jpg"
+    
   ];
 
   return (

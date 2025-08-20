@@ -1,84 +1,75 @@
 .categories-section {
   background: linear-gradient(135deg, #3b0066, #1a002d);
-  padding: 80px 20px;
+  padding: 60px 20px; 
   text-align: center;
   color: #fff;
 }
 
 .categories-heading {
-  font-size: 2.5rem;
-  margin-bottom: 50px;
+  font-size: 2.2rem; 
+  margin-bottom: 40px;
   font-weight: bold;
-  text-shadow: 0 0 15px #a64dff;
+  text-shadow: 0 0 12px #a64dff;
 }
 
 .categories-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 30px;
-  max-width: 1200px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+  gap: 20px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 .category-card {
   position: relative;
-  border-radius: 15px;
+  display: block; 
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 0 20px rgba(162, 67, 255, 0.4);
+  box-shadow: 0 0 15px rgba(162, 67, 255, 0.4);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   background: #1c0033;
   cursor: pointer;
+  text-decoration: none; 
+  color: inherit; 
 }
 
 .category-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 0 30px rgba(200, 100, 255, 0.7);
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(200, 100, 255, 0.6);
 }
 
 .category-img {
   width: 100%;
-  height: 160px;
+  height: 140px; 
   object-fit: cover;
   display: block;
 }
 
 .overlay {
   position: absolute;
-  bottom: 0;
+  top: 0;
+  left: 0;
   width: 100%;
-  padding: 12px;
-  background: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  background: rgba(0,0,0,0.5); 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  transition: all 0.3s ease;
+  padding: 8px;
 }
 
 .overlay h3 {
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1.5rem; 
   color: #fff;
 }
 
 .overlay p {
-  margin: 4px 0 10px;
-  font-size: 0.9rem;
+  margin: 4px 0 8px;
+  font-size: 0.8rem; 
   color: #ccc;
-}
-
-.play-btn {
-  padding: 8px 18px;
-  border: none;
-  border-radius: 25px;
-  background: linear-gradient(135deg, #a64dff, #ff0080);
-  color: #fff;
-  font-size: 0.95rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-
-.play-btn:hover {
-  background: linear-gradient(135deg, #ff0080, #a64dff);
-  box-shadow: 0 0 10px rgba(255, 0, 200, 0.8);
 }
 
 .more-card {
@@ -93,19 +84,19 @@
 }
 
 .more-card h3 {
-  font-size: 1.8rem;
+  font-size: 1.6rem; 
   font-weight: bold;
   color: #fff;
 }
 
 .explore-btn {
   display: inline-block;
-  margin-top: 40px;
-  padding: 14px 30px;
+  margin-top: 30px;
+  padding: 12px 28px;
   border-radius: 30px;
   background: linear-gradient(135deg, #ff0080, #a64dff);
   color: #fff;
-  font-size: 1.1rem;
+  font-size: 1rem; 
   font-weight: bold;
   text-decoration: none;
   transition: 0.3s ease;
@@ -113,5 +104,5 @@
 
 .explore-btn:hover {
   background: linear-gradient(135deg, #a64dff, #ff0080);
-  box-shadow: 0 0 15px rgba(200, 100, 255, 0.8);
+  box-shadow: 0 0 12px rgba(200, 100, 255, 0.7);
 }

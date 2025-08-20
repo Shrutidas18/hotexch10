@@ -10,7 +10,7 @@
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-/* Shared button styles */
+
 .nav-btn {
   padding: 0.6rem 1.4rem;
   border-radius: 30px;
@@ -19,7 +19,6 @@
   transition: 0.3s ease;
 }
 
-/* Sign In (left side) */
 .left-btn {
   background: #ffb703;
   color: #000;
@@ -29,7 +28,7 @@
   color: white;
 }
 
-/* Log In (right side) */
+
 .right-btn {
   background: #ffffff;
   color: #3a0ca3;
@@ -39,7 +38,7 @@
   color: black;
 }
 
-/* Hide navbar when scrolling down */
+
 .navbar-hidden {
   opacity: 0;
   transform: translateY(-100%);
