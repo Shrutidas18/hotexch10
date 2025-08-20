@@ -6,7 +6,7 @@ export default function Hero() {
     <section className="hero">
       {/* Background Video */}
       <video autoPlay loop muted playsInline className="hero-bg">
-        <source src="/casino-bg.mp4" type="video/mp4" />
+        <source src="/background.mp4" type="video/mp4" />
       </video>
 
       {/* Overlay */}

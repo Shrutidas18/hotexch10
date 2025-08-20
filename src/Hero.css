@@ -127,3 +127,52 @@
   padding: 0.3rem;
   border-radius: 0 0 15px 15px;
 }
+
+/* ---------------- Responsive Fixes ---------------- */
+
+/* Tablet (2 in a row for highlights) */
+@media (max-width: 1024px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+  .highlight-boxes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile (stack neatly, 2 in a row for highlights) */
+@media (max-width: 600px) {
+  .hero {
+    height: auto;
+    padding: 3rem 1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+
+  .cta-button {
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .highlight-boxes {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .highlight-video {
+    height: 150px;
+  }
+
+  .highlight-card h3 {
+    font-size: 1rem;
+  }
+}
