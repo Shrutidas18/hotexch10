@@ -3,7 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import ReactPixel from 'react-facebook-pixel';
 
+// --------------------
+// Initialize Meta Pixel for SPA
+// --------------------
+const options = { autoConfig: true, debug: false };
+ReactPixel.init('1269053948037640', undefined, options); // Replace with your Pixel ID
+ReactPixel.pageView(); // Track initial page load
+
+// --------------------
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -11,7 +20,4 @@ root.render(
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
