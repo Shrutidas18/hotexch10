@@ -1,0 +1,25 @@
+footer {
+  background: linear-gradient(135deg, #5a189a, #3c096c); /* rich purple gradient */
+  color: #fff; /* clean white text */
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  border-top: 2px solid rgba(255, 255, 255, 0.15); /* subtle luxury detail */
+}
+
+footer a {
+  color: #ffd700; /* gold accent for links */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #ff9f1c; /* warm golden-orange hover */
+}
+
+footer p {
+  margin: 0.5rem 0;
+  font-weight: 400;
+  opacity: 0.9;
+}
